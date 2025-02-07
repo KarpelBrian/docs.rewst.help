@@ -181,10 +181,10 @@
       * [Integrating with two CSPs](documentation/integrations/general/multi-instance-integration/integrating-with-two-csps.md)
     * [Managing groups: Microsoft Graph vs. Exchange Online](documentation/integrations/general/microsoft-graph-vs-exchange-online.md)
   * [PSA](documentation/integrations/psa/README.md)
-    * [ConnectWise Manage](documentation/integrations/psa/connectwise-manage/README.md)
+    * [ConnectWise](documentation/integrations/psa/connectwise-manage/README.md)
       * [ConnectWise integration setup](documentation/integrations/psa/connectwise-manage/connectwise-integration-setup.md)
       * [Pod configuration](documentation/integrations/psa/connectwise-manage/pod-configuration.md)
-      * [Least privilege access requirements for ConnectWise Manage integration](documentation/integrations/psa/connectwise-manage/least-privilege-access-requirements-for-connectwise-manage-integration.md)
+      * [Least privilege access requirements for ConnectWise PSA integration](documentation/integrations/psa/connectwise-manage/least-privilege-access-requirements-for-connectwise-manage-integration.md)
       * [Querying and filtering in ConnectWise PSA actions](documentation/integrations/psa/connectwise-manage/querying-and-filtering-in-connectwise-psa-actions.md)
       * [Troubleshoot API issues from ConnectWise logs](documentation/integrations/psa/connectwise-manage/troubleshoot-api-issues-from-connectwise-logs.md)
       * [ConnectWise actions & endpoints](documentation/integrations/psa/connectwise-manage/actions-and-endpoints.md)
@@ -417,6 +417,8 @@
     * [Forms Portal](documentation/app-builder/prebuilt-apps/forms-portal.md)
     * [End User Portal](documentation/app-builder/prebuilt-apps/end-user-portal.md)
     * [Operational Analytics Reporting Portal](documentation/app-builder/prebuilt-apps/msp-reporting-portal.md)
+* [Agent Smith](documentation/agent-smith/README.md)
+  * [Agent Smith configuration overview](documentation/agent-smith/agent-smith-configuration-overview.md)
 
 ## 📦 Prebuilt Automations
 
@@ -451,8 +453,6 @@
 * [Community-driven content](community-corner/community-driven-content/README.md)
   * [From scales to feathers](community-corner/community-driven-content/from-scales-to-feathers.md)
   * [Deploying Agent Smith with ImmyBot](community-corner/community-driven-content/deploying-agent-smith-with-immybot.md)
-* [Agent Smith](community-corner/agent-smith/README.md)
-  * [Agent Smith configuration overview](community-corner/agent-smith/agent-smith-configuration-overview.md)
 
 ## 📢 Updates
 
