@@ -1,4 +1,4 @@
-# February 7, 2025 - Training Update
+# February 14, 2025 - Training update
 
 Explore what new changes the Training team has made in the last week.
 
@@ -7,9 +7,9 @@ Explore what new changes the Training team has made in the last week.
 <summary><strong>General News and Reminders</strong></summary>
 
 * **SHOUT OUTS** **TO:**
-  * Gene, Mart, Allie, Paul, Mark, and Niels for passing the Foundations Certification.
+  * Mart, Jon, Joshua, Michael, and Dom for passing the Foundations Certification.
     * Take the [foundations-certification.md](../../../cluck-university/rewst-foundations/foundations-certification.md "mention") Exam, and collect your prestigious **Certified Rewster** badge in Discord along with access to the super-secret Discord channel.&#x20;
-  * Charlie, Kevin, and Shane for passing the Clean Automation Certification.
+  * Bart, Charlie, Stephen, Kian, and Sebastian for passing the Clean Automation Certification.
     * Take the [clean-automation-certification.md](../../../cluck-university/clean-automation/clean-automation-certification.md "mention") exam and get that fancy certificate!
 * The next [**Rewst Foundations Bootcamp**](https://docs.rewst.help/cluck-university/rewst-foundations#live-instructor-led-bootcamp) is coming up **Mar 3 - Mar 4.** Remember to register for **both parts** 1 and 2!
   * [Part 1](https://calendly.com/cluck-u/rewst-foundations-bootcamp-pt-1?month=2025-01) (Lessons 1 - 3)
@@ -25,6 +25,7 @@ Explore what new changes the Training team has made in the last week.
 
 **What's New at Cluck University?**
 
+* [Electives changed to Micro Courses](https://docs.rewst.help/cluck-university/micro-chicken:)
 * [New Automation Jumpstart Page](https://docs.rewst.help/cluck-university/automation-jump-start)
 * The team is working on some **self-paced onboarding** education content behind the scenes...stay tuned!
 
@@ -36,12 +37,22 @@ Explore what new changes the Training team has made in the last week.
 
 **New & Updated Pages:**
 
-* [N-able N-sight integration (and our first new formatted integration guide!](https://docs.rewst.help/documentation/integrations/rmm/n-able-n-sight/n-able-n-sight-integration#n-able-n-sight-actions-and-endpoints))
-* [Intro to Crates glowup](https://docs.rewst.help/prebuilt-automations/crates)
-* [What is an Integration? ](https://docs.rewst.help/documentation/integrations)
-* [Hudu integration doc glowup](https://docs.rewst.help/documentation/integrations/documentation/hudu/hudu-integration-setup)
-* [Custom integrations V2 glowup](https://docs.rewst.help/documentation/integrations/custom-integrations/custom-integrations-v2)
-* [New Org variable to org variables table](https://docs.rewst.help/documentation/user-management/organization-variables)
-* General scan and scrub for all remaining mentions of ConnectWise Manage, to now say ConnectWise PSA&#x20;
+* [Agent Smith](https://docs.rewst.help/documentation/agent-smith/agent-smith-configuration-overview)
+  * The topic now has its own section on the docs site, plus screen shots and updated instructions.
+* [PSA integrations landing page](https://docs.rewst.help/documentation/integrations/psa)
+  * Greater context is given for why to integrate PSAs, as well as a directory for each brand’s setup instructions, and Crates to unpack after completion.
+* [Updated instructions for how to add and remove users](https://docs.rewst.help/documentation/user-management/how-to-add-and-remove-users)
+  * Nothing has changed with how this is done, but our documentation was out of date from previous menu changes.
+* [Just in Time Admin Access Crate documentation](https://docs.rewst.help/prebuilt-automations/existing-crate-documentation/just-in-time-admin-access-crate)
+  * (shout out to Ray Jablonskis)
+* [Export Intune Policies and Configurations Crate documentation](https://docs.rewst.help/prebuilt-automations/existing-crate-documentation/export-intune-policies-and-configurations-crate)
+* [Cove integration documentation](https://docs.rewst.help/documentation/integrations/security/cove-integration)
+* [Webroot integration documentation](https://docs.rewst.help/documentation/integrations/security/webroot)
+* [Updated Crate documentation template to include more styling examples and links to other new existing documentation](https://www.notion.so/rewst/CLONE-ME-Crate-documentation-template-18cb56f9907180a2a9bcca3b6b26506d)
+* [Updated the Completion Handler documentation](../../../documentation/workflows/completion-handlers.md)
+* [Updated Email + Text Automation Jump Start Page to clarify last step with link to Completion handler docs](../../../cluck-university/automation-jump-start/email-+-text-message-automation.md)
 
 </details>
+
+
+
