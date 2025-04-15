@@ -332,6 +332,7 @@
 * [Agent Smith](documentation/agent-smith/README.md)
   * [Agent Smith configuration overview](documentation/agent-smith/agent-smith-configuration-overview.md)
   * [Deploy Agent Smith with ImmyBot](documentation/agent-smith/deploying-agent-smith-with-immybot.md)
+  * [Deploy Agent Smith with Microsoft Intune](documentation/agent-smith/deploy-agent-smith-with-microsoft-intune.md)
 
 ## 📦 Prebuilt Automations
 
@@ -376,6 +377,7 @@
     * [Step 1: Setting up organization variables](prebuilt-automations/existing-crate-documentation/new-user-onboarding/step-1-setting-up-organization-variables.md)
     * [Step 2: New user onboarding form](prebuilt-automations/existing-crate-documentation/new-user-onboarding/step-2-new-user-onboarding-form.md)
     * [Step 3: New user onboarding form minimalistic](prebuilt-automations/existing-crate-documentation/new-user-onboarding/step-3-new-user-onboarding-form-minimalistic.md)
+  * [Notify on Conditional Access Policy Changes Crate](prebuilt-automations/existing-crate-documentation/notify-on-conditional-access-policy-changes-crate.md)
   * [OpenAI ticket categorization](prebuilt-automations/existing-crate-documentation/openai-ticket-categorisation-setup.md)
   * [OpenAI ticket sentiment](prebuilt-automations/existing-crate-documentation/openai-ticket-sentiment-setup.md)
   * [Remove Malicious Email and Block Sender Crate](prebuilt-automations/existing-crate-documentation/remove-malicious-email-and-block-sender-crate.md)
