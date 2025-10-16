@@ -82,6 +82,15 @@ iex $commands
 6. Click **Save Configuration**.
 7. Rewst will do a quick validation of your input. Once completed, you'll see a new section beneath the configuration form for[ organization mapping](https://docs.rewst.help/documentation/integrations#what-is-organization-mapping). Complete your mapping as desired.&#x20;
 
+{% hint style="info" %}
+For APAC customers:
+
+* When you click **Authorize** during the set up process, you end up at the URL [https://app.ninjarmm.com/auth/](https://app.ninjarmm.com/auth/).&#x20;
+* If you change the **Region Instance** to APAC and click **Authorize**, you may still be redirected to the US site.
+* Click **Save Configuration** first. Then, reload Ninja's website and ensure that it's showing the correct APAC region.
+* Click **Authorize** again. The URL should now show the correct APAC address.&#x20;
+{% endhint %}
+
 ## Test the integration
 
 Once you’ve [mapped your customers](https://docs.rewst.help/documentation/integrations/general/organization-mapping#what-is-organization-mapping), test the integration by following the steps below.
@@ -113,7 +122,7 @@ Got an idea for a new Integration? Rewst is constantly adding new integrations t
 This brand of RMM allows PowerShell scripts to be passed via API. To report the script back to Rewst, you'lll need to add a manual webhook action. We recommend using the run PowerShell script subworkflow to handle this for you and if using custom scripts you will need to add this to bottom to ensure the call back to Rewst is made.
 
 ```
-$postData = $PS_Results | ConvertTo-Json Invoke-RestMethod -Method 'Post' -Uri $post_url -Body $postData -ContentType 'application/json; charset=utf-8
+$postData = $PS_Results | ConvertTo-Json Invoke-RestMethod -Method 'Post' -Uri $post_url -Body $postData -ContentType 'application/json; charset=utf-8'
 ```
 
 ## Crates related to the NinjaOne integration
