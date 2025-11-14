@@ -8,8 +8,6 @@ If you’re new to Crates, read through our introductory Crate documentation [he
 
 Our Export Intune Policies and Configurations Crate allows you to select and export Intune policies and configurations. Once exported, these are made accessible in a JSON format via a webhook URL for easy download or integration into another workflow.
 
-## Why use the Export Intune Policies and Configurations Crate?
-
 * Regularly back up critical Intune policies and configurations to ensure quick recovery, compliance, and protection against accidental changes or system failures.
 * Use a listener workflow to simplify deployment, ensure compliance and standardize policies and configurations across many organizations.
 * Integrate Intune data with other systems to streamline security monitoring, IT service management and reporting.
@@ -32,7 +30,7 @@ The [Microsoft Cloud Integration Bundle](../../configuration/integrations/integr
 7. Click **Unpack**.\
 
 
-## Test the Crate
+### Test the Crate
 
 1. Access the form by navigating to **Automations > Forms** in the left side menu of your Rewst platform.
 2. Search for `Intune`.&#x20;
@@ -42,7 +40,7 @@ The [Microsoft Cloud Integration Bundle](../../configuration/integrations/integr
 6.  Click the policies and configurations you would like to export, then click **Submit**.
 
     \
-    ![](<../../../.gitbook/assets/image (8) (1).png>)
+    ![](<../../../.gitbook/assets/image (8) (1) (1).png>)
 7. Access the workflow results by navigating to **Automations > Results**.
 8.  Search for `Export Intune Configurations and Policies` and open the workflow result.\
 
