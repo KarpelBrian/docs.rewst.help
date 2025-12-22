@@ -399,7 +399,7 @@ Expand each of the categories below to see that type of org variable's reference
 
 | **ORG.VARIABLES**                     | **Purpose**                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `user_start_date_behavior`            | Controls whether onboarding starts immediately or waits for the specified start date.                                                                                                                                                                                                                                                                        |
+| `user_start_date_action`              | Controls whether onboarding starts immediately or waits for the specified start date.                                                                                                                                                                                                                                                                        |
 | `type_for_created_new_user_ticket`    | Defines the ticket type for new user onboarding.                                                                                                                                                                                                                                                                                                             |
 | `subtype_for_created_new_user_ticket` | Defines the subtype for new user onboarding tickets.                                                                                                                                                                                                                                                                                                         |
 | `item_for_created_new_user_ticket`    | Defines the item for new user onboarding tickets.                                                                                                                                                                                                                                                                                                            |
@@ -452,6 +452,7 @@ If not set, your organization's default settings will be applied.
 3. Click on the Crate to open the details page.
 4. Click **Unpack Crate**, then **Continue**.
 5. Click **Unpack**. Note that this is a large Crate, and the process may take a few minutes.
+6. The [organization variable](../../../configuration/organization-variables.md#manually-add-a-new-organization-variable) `user_onboard_form_name` must be set  to the name of the form unpacked with the Crate.&#x20;
 
 ## Use the Crate
 
