@@ -22,7 +22,7 @@ _Organization variables_, referred to as _org variables_ for short, serve as the
 
 ## **View all organization variables in Rewst**
 
-Organization variables can manually be added by navigating to **Configuration > Organization Variables** in the left side menu of your Rewst platform. In this page, view a total list of all org variables for your selected organization.
+Organization variables can manually be added by navigating to **Configuration > Organization Variables** in the left side menu of your Rewst platform. In this page, view a total list of all org variables for your selected organization. Note that org variables are visible only one level deep - you'll see them for a child org of a parent org, but not the child org of that child org, for example,&#x20;
 
 When unpacking Crates, you may be prompted to fill out forms within those Crates to set up your organization variables. Once the form is submitted, the variables will appear in this total list.
 
@@ -84,6 +84,24 @@ Access variables seamlessly in any workflow with the following syntax:
 {% hint style="info" %}
 **Defining Boolean Values:** always use lowercase `true` or `false` to align with Rewst's standardized practices. This uniform approach applies to all future workflow designs. Existing legacy workflows may display variations.
 {% endhint %}
+
+## **Use custom org variables to standardize client workflows**
+
+Creating your own org variables enables you to build logic into your custom workflows so that you don't need to hardcode values within workflows.
+
+For example, instead of hardcoding a client's service tier as `gold` directly in a workflow, you can create a `service_tier` org variable, reference that variable wherever the tier is needed across automations, and update the org variable in one place if the names of service tiers change.
+
+Once you've set your org variables, your workflows can reference them to run automation selectively — for example, only triggering managed-client workflows where `is_managed` is `true`.
+
+| Variable name                | Example value                                                                                                                                                                                                                                                                                                     |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `is_managed`                 | `true`                                                                                                                                                                                                                                                                                                            |
+| `service_tier`               | `gold`                                                                                                                                                                                                                                                                                                            |
+| `uses_simplified_onboarding` | `false`                                                                                                                                                                                                                                                                                                           |
+| `managed_pc_license_guid`    | <p><code>cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46</code><br>This is a sample value that corresponds with the Microsoft Business Premium license SKU. Confirm the current value via <a href="https://learn.microsoft.com/en-us/entra/identity/users/licensing-service-plan-reference">Microsoft documentation</a>.</p> |
+| `security_group`             | `IT-Admins`                                                                                                                                                                                                                                                                                                       |
+| `mail_enabled_group`         | `AllStaff`                                                                                                                                                                                                                                                                                                        |
+| default\_OU                  | OU=UserAccounts, OU=Departments,OU=Marketing,DC=CONTOSO,DC=COM                                                                                                                                                                                                                                                    |
 
 ## **Use as default feature**
 
