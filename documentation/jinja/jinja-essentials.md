@@ -4,10 +4,10 @@
 
 ### Braces and their functions
 
-Jinja uses brace delimiters to distinguish between expressions and statements. Specifically, it uses double curly braces `{{ }}` to surround expressions that should be replaced with output and curly braces with percent signs `{% %}` to surround statements that control the logic of the template. Jinja uses the `{# #}` syntax for comments. Anything between the opening and closing comment delimiters will be ignored by Jinja and not included in the output.
+Jinja uses brace delimiters to distinguish between expressions and statements. Specifically, it uses double curly braces `{{ }}` to surround expressions that should be replaced with output, and curly braces with percent signs `{% %}` to surround statements that control the logic of the template. Jinja uses the `{# #}` syntax for comments. Anything between the opening and closing comment delimiters will be ignored by Jinja and not included in the output.
 
-* **Output Values (`{{ }}`):** Display variables or expressions. For example, `{{ CTX.user_id }}` shows user-specific data.
-* **Code Blocks (`{% %}`):** Used for control structures like `if`, `else`, `for` loops.
+* **Output values (`{{ }}`):** Display variables or expressions. For example, `{{ CTX.user_id }}` shows user-specific data.
+* **Code blocks (`{% %}`):** Used for control structures like `if`, `else`, `for` loops.
 * **Comments (`{# #}`):** Enable non-executable notes for clarity.
 
 ### Use the Monaco Editor in Rewst
@@ -18,12 +18,12 @@ The _Monaco Editor_ is a powerful code editor that allows you to edit and previe
 
 Here are some features and keystrokes you can use with the Monaco Editor in Rewst:
 
-* **Syntax highlighting:** The Monaco Editor provides syntax highlighting for Jinja templates, making it easier to read and understand your code.
-* **Code completion:** The Monaco Editor provides code completion for Jinja templates, suggesting possible completion options as you type.
-* **Find and Replace:** The Monaco Editor provides a powerful Find and Replace feature that allows you to quickly search for and replace text within your code.
-* **Keyboard shortcuts:** The Monaco Editor provides a variety of keyboard shortcuts that can help you to work more efficiently. For example:
-  * **Ctrl + Space:** Trigger code completion
-  * **Ctrl + /:** Toggle line commenting
+* Syntax highlighting: The Monaco Editor provides syntax highlighting for Jinja templates, making it easier to read and understand your code.
+* Code completion: The Monaco Editor provides code completion for Jinja templates, suggesting possible completion options as you type.
+* Find and Replace: The Monaco Editor provides a powerful Find and Replace feature that allows you to quickly search for and replace text within your code.
+* Keyboard shortcuts: The Monaco Editor provides a variety of keyboard shortcuts that can help you to work more efficiently. For example:
+  * Ctrl + Space: Trigger code completion
+  * Ctrl + /: Toggle line commenting
 
 {% hint style="info" %}
 Note that Rewst's Jinja2 implementation displays mutable object— lists, dicts, namespaces—  in their final state immediately when first rendered, rather than their current state at render time. This differs from standard Jinja2 behavior where objects should display their state at the time of rendering.
@@ -245,11 +245,11 @@ This concise approach efficiently applies the squaring function to each item in 
 
 ### With Items
 
-_With Items_ is the equivalent to a `foreach` statement in other lanGet a list of inactive users for each client that we manage.guages. With this, you can pass a list of parameters into a certain action, based on the parameters of a specific task or subworkflow, collect the results from each, and then do something with that information. Learn more about how to achieve this in our [workflows documentation](https://docs.rewst.help/documentation/automations/workflows/advanced-workflow-operations-menu?q=%22append+with+items%22#with-items).&#x20;
+_With Items_ is the equivalent to a `foreach` statement in other languages. With this, you can pass a list of parameters into a certain action, based on the parameters of a specific task or subworkflow, collect the results from each, and then do something with that information. Learn more about how to achieve this in our [workflows documentation](https://docs.rewst.help/documentation/automations/workflows/advanced-workflow-operations-menu?q=%22append+with+items%22#with-items).&#x20;
 
 With Items is sometimes but not always used in conjunction with [collected results](jinja-essentials.md#collected-results). Collected results only applies if the task or subworkflow is outputting something that you want in the result. Otherwise, you don't have to use it. Consider these two examples:
 
-`Delete every single user that's inactive.`&#x20;
+`Delete every single user that's inactive.`
 
 Since that action wouldn't give us anything back, you don't need to use collected results.
 
@@ -267,18 +267,17 @@ Choose which of the following two methods you would like to use for collected re
 
 1. Add a noop action to your Workflow Builder canvas; it's best practice to start with a noop to make it clear where your collected results will start. Name it something descriptive, following the format `<taskname>_collected_results`.&#x20;
 2. Add a transition between the noop task and your task or subworkflow so that it runs after the execution.&#x20;
-3. Create a data alias in the transition. Name it something descriptive that relates to the name you gave the noop, following the format `get_<taskname>_collected`_`_`_`results`.
+3. Create a data alias in the transition. Name it something descriptive that relates to the name you gave the noop, following the format `get_<taskname>_collected_results`.
 4. Click <img src="../../.gitbook/assets/Screenshot 2026-03-04 at 4.24.45 PM.png" alt="" data-size="line"> to open the Jinja editor.&#x20;
 5. Enter the following syntax to work with list comprehension and add a list of the group result inside of the modification\_results variable:
 
-```jinja
-{{
-[
-collected_result.result.<variable_name>
-for collected_result in TASKS.<nameoftaskorsubworkflow>.collected_results
-]
+<pre class="language-jinja"><code class="lang-jinja">{{
+<strong>    [
+</strong>        collected_result.result.&#x3C;variable_name>
+        for collected_result in TASKS.&#x3C;nameoftaskorsubworkflow>.collected_results
+    ]
 }}
-```
+</code></pre>
 
 6. Use the following syntax to call the collected results, which will appear in the context if you have properly set up your data alias.
 
