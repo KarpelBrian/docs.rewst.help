@@ -1,4 +1,4 @@
-# February 20, 2026 - Marketplace Update
+# February 20, 2026 - Marketplace update
 
 <details>
 
@@ -40,6 +40,10 @@ No new Crates were released this week.&#x20;
 ### Kits
 
 There were no updates to kits this week.
+
+### Subworkflows
+
+There were no updates to subworkflows this week.
 
 </details>
 
