@@ -257,8 +257,6 @@ To execute workflows at the MSP level across client accounts, you must configure
 For more on how actions work in Rewst, check out our [introductory actions documentation here](https://docs.rewst.help/documentation/workflows/actions-in-rewst).
 {% endhint %}
 
-Halo's own API documentation can be found [here](https://app.gitbook.com/s/AQQ1EHVcEsGKBPVHmiav/documentation).
-
 | Action Name                           | Description                                                                                                                                                  | Endpoint Related to Action     |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
 | Add or Update Actions                 | Adds or updates one or more action(s). If id is included then updates, if not included then creates new. Ticket ID is mandatory                              | /Actions                       |
@@ -298,7 +296,7 @@ Halo's own API documentation can be found [here](https://app.gitbook.com/s/AQQ1E
 | List Agents                           | Returns an array of Agents                                                                                                                                   | /Agent                         |
 | List Appointments                     | Returns an array of appointments                                                                                                                             | /Appointment                   |
 | List Assets                           | Returns an object containing the count of Assets, and an array of Asset objects                                                                              | /Asset                         |
-| List Attachments                      | Returns an array of attachments. Each attachment returned will be in Base64 format.                                                                          | /Attachment                    |
+| List Attachments                      | Returns an array of attachments and their metadata                                                                                                           | /Attachment                    |
 | Preview Report                        | Previews a report from Halo PSA.                                                                                                                             | /Report                        |
 | List Users                            | Returns an object containing the count of Users and an array of User objects                                                                                 | /Users                         |
 | List Top Levels                       | Returns an object containing the count of top levels, and an array containing the top level tree                                                             | /Toplevel                      |
